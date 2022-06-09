@@ -37,7 +37,7 @@ nav ul li a:hover {
 
 .banner {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -97,7 +97,7 @@ h1 {
   padding: 10px 20px;
   margin-right: 10px;
   border-radius: 4px;
-  font-family: barlow Condensed;
+  font-family: Barlow Condensed;
 }
 
 .image {
@@ -107,6 +107,7 @@ h1 {
 
 .image img {
   width: 150%;
+  height: 80%;
 }
 
 hr {
@@ -115,6 +116,21 @@ hr {
 
 .open {
   display: none;
+}
+
+@media (max-width: 940px) {
+  .banner {
+    flex-direction: column-reverse;
+    height: unset;
+  }
+  .banner div {
+    padding: 40px;
+    width: 100%;
+  }
+
+  nav {
+    padding: 10px 40px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -133,16 +149,6 @@ hr {
   nav {
     display: block;
     padding: 40px;
-  }
-
-  .banner {
-    flex-direction: column-reverse;
-    height: unset;
-  }
-
-  .banner div {
-    padding: 40px;
-    width: 100%;
   }
 
   .image {
