@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: hsl(230, 11%, 40%);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: Barlow Condensed;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: hsl(231, 7%, 65%);
+}
+
+.banner {
+  display: flex;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.banner div {
+  width: 50%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mono {
+  text-transform: uppercase;
+  font-family: Barlow;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 3px;
+}
+
+.mono span {
+  background: hsl(230, 29%, 20%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+  margin: 40px 0;
+  font-family: Barlow Condensed;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: hsl(230, 29%, 20%);
+}
+
+.details {
+  font-size: 24px;
+  color: hsl(230, 11%, 40%);
+  margin-bottom: 30px;
+}
+
+.demo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Barlow;
+  font-weight: 700;
+  color: hsl(230, 11%, 40%);
+  line-height: 2;
+}
+
+.demo a {
+  background: hsl(0, 100%, 68%);
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-family: barlow Condensed;
+}
+
+.image {
+  background: linear-gradient(to top, white 30%, hsl(207, 33%, 95%) 70%);
+  border-radius: 0 0 0 70%;
+}
+
+.image img {
+  width: 150%;
+}
+
+hr {
+  display: none;
+}
+
+.open {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    /* background: rgba(0, 0, 0, 0.1); */
+  }
+
+  .open {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  nav {
+    display: block;
+    padding: 40px;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    height: unset;
+  }
+
+  .banner div {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .image {
+    height: 400px;
+    background: linear-gradient(to right, white 50%, hsl(207, 33%, 95%) 50%);
+  }
+
+  hr {
+    display: block;
+    color: hsl(207, 33%, 95%);
+  }
+  nav ul {
+    height: 250px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+}

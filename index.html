@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>The Face | Project tracking intro component</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" />
+
+          <img src="./images/icon-hamburger.svg" class="open" alt="" />
+        </div>
+        <ul class="menu">
+          <li><a href="#product">Product </a></li>
+          <li><a href="#"> Features</a></li>
+          <li><a href="#">Pricing</a></li>
+
+          <hr />
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <div class="banner" role="banner">
+        <div>
+          <p class="mono"><span>New</span> Monograph Dashboard</p>
+          <h1>Powerful insights into your team</h1>
+          <p class="details">
+            Project planning and time tracking for agile teams
+          </p>
+          <p class="demo">
+            <a href="#">Schedule a demo </a> to see a live preview
+          </p>
+        </div>
+        <div class="image">
+          <img src="./images/illustration-devices.svg" alt="" />
+        </div>
+      </div>
+
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">The Face</a>.
+        </p>
+      </footer>
+    </main>
+    <script>
+      const openn = document.querySelector(".open");
+      const menu = document.querySelector(".menu");
+      openn.addEventListener("click", () => {
+        menu.style.display === "none"
+          ? (menu.style.display = "block")(
+              openn.setAttribute("src", "./images/icon-close.svg")
+            )
+          : (menu.style.display = "none")(
+              openn.setAttribute("src", "./images/icon-hamburger.svg")
+            );
+      });
+    </script>
+  </body>
+</html>
